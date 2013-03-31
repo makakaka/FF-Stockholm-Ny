@@ -1,0 +1,187 @@
+/*
+Theme Name:     Incidental Child
+Description:    Child theme for Incidental
+Author:         Mattias Kardell
+Template:       incidental
+Version:        0.1.0
+*/
+
+
+@import url("../incidental/style.css");
+
+body { font-family: "HelveticaNeue", "Helvetica Neue", Arial, sans-serif;
+		color: #333; }
+html{ background-color: #ffffff; } 
+
+/******************
+* LAYOUT
+*******************/
+.header-wrapper-2 { width: 960px; background: url(/wp-content/themes/incidental/images/icon/dark/frank_960_35_r.png) 0 0 no-repeat; margin: 10px 0 0 0; padding: 0; height: 35px;}
+#main-superfish-wrapper-full{height: 23px; background-color: #000 !important; width: 805px; margin-top: 7px; float: left; }
+div.gdl-left-sidebar .header-wrapper.four.columns{ margin-left: 20px; margin-right: 0px; margin-top: 10px; float: left; } 
+.logo-wrapper{ margin-top: 30px; margin-left: 20px; margin-bottom: 5px;} 
+.logo-wrapper-transparent { margin: 0 0 20px 20px; }
+.navigation-wrapper .sf-menu li { border: none; /*border-color: #ECECEC !important;*/ }
+.navigation-wrapper .sf-menu li a { background-color: #fff !important; }
+div.copyright-wrapper, div.social-wrapper { background-color: #fff !important; font-style: normal; margin-left: 14px;
+margin-right: 14px;}
+div.copyright-wrapper {padding-bottom: 0;}
+div.social-wrapper {padding-top: 5px; padding-bottom: 5px;}
+div.copyright-area {margin: 5px;}
+div.navigation-wrapper { height: 30px; margin-bottom: 5px; font-weight: normal; font-size: 10px;}
+
+
+#maka-footer{ height: 24px; line-height:24px; background-color: #fff; position: relative; }
+.footer-footer{ width: 93%; bottom: 10px; left: 40px; /*  margin: 10px 40px 10px 40px; */ }
+.footer-standard{ width: 920px;  margin: 10px 40px 10px 40px; }
+.footer-lista { color: #000 important!; width: 960px; margin: 10px 0 10px 0;}
+.footer-object { color: #000 important!; width: 960px; margin: 10px 0 10px 0;}
+span.social-wrapper {padding: 2px;}
+.footer-span{ padding: 0 0 0 6px; font-size: 9px; }
+
+.left{ float: left; left: 10px; }
+.right{ float: right; right: 10px; }
+
+/******************
+* FÄRG
+* STORLEK
+*******************/
+/* BACKGROUND */
+.gdl-slider-overlay{ z-index: 0; }
+div.gdl-slider-overlay{ background: url(/wp-content/themes/incidental/images/pattern/pattern-ff.png) no-repeat -20px 10px; } /* 0 99% */ 
+div.gdl-slider-overlay-2{ background: url(/wp-content/themes/incidental/images/pattern/pattern-ff-mini.png) no-repeat -20px 10px; } 
+div.gdl-slider-overlay-3{ background: transparent; } 
+div.gdl-slider-overlay-4{  background: url(/wp-content/themes/incidental/images/pattern/pattern-ff-vit.png) no-repeat -20px 10px; } 
+.gdl-link-title{ color: #3d3d3d !important; } 
+.gdl-slider-title, .gdl-slider-title a{ color: #ffffff !important; } 
+.gdl-slider-caption{ color: #ffffff !important; } 
+.nivo-caption{ color: #000000 !important; } 
+
+a.underline{ text-decoration: underline;}
+a.underline:hover{ text-decoration: none; }
+
+/* VÄNSTER MENY */
+div.gdl-left-sidebar .header-wrapper.five.columns, div.gdl-left-sidebar .header-wrapper.four.columns {
+	/*background: url(/wp-content/themes/incidental/images/icon/light/content-bg.png);
+	background-color: #fff;*/
+	background: none !important;
+	position: relative !important;
+} 
+a strong, div.wpcf7 p, input { font-size: 8px; }
+button { font-size: 9px; }
+.sf-menu li {font-size: 10px;}
+.sf-menu li a strong {font-size: 10px;}
+.sf-menu li a, .sf-menu-normal li a {font-size: 10px;}
+.sf-menu li:last-child { border-bottom: none; }
+
+/* Till vänster om menyn öppnas upp... snyggt ? fungerar inte ihop med ovan... */
+div.gdl-left-sidebar.five.columns, div.gdl-left-sidebar.four.columns {
+	background: none !important;
+} 
+/* vit bakgrund på menyn 
+div.gdl-left-sidebar .header-wrapper.four.columns{ background-color: #ffffff; } 
+div.gdl-left-sidebar.four.columns{ background: url(/wp-content/themes/incidental/images/icon/light/navigation-left-bar.png); } */
+
+/* gdl-style-switch */
+div.gdl-style-switch{ width: 90px; height: 90px; float: left; cursor: pointer; opacity: 0.8; filter: alpha(opacity=80); background: url('/wp-content/themes/incidental/images/gdl-style-switch-visa.png') no-repeat center center; z-index: 100; }
+div.gdl-style-switch.active{ background: url('/wp-content/themes/incidental/images/gdl-style-switch-dolj.png') no-repeat center center;}
+
+div.gdl-inner-page-item { margin-top: 100px; background: url('/wp-content/themes/incidental/images/icon/dark/content-bg.png');}
+div.gdl-inner-page-item-2 { margin-top: 0px; }
+div.gdl-inner-page-item-lista { background: url('/wp-content/themes/incidental/images/icon/dark/content-lista.png'); }
+div.gdl-page-header-area { padding: 20px 0 10px 0; margin: 0 0 0 0; }
+div.gdl-page-header-area-2 { text-align: center; padding: 43px 15px 0px; margin-bottom: 33px; position: relative; }
+div.portfolio-thumbnail-context { margin: 10px 10px 20px; }
+/* KNAPPAR */
+a.button, button, input[type="submit"], input[type="reset"], input[type="button"], a.gdl-button { background-color: #fff; color: #000; border: 1px solid #ccc; -webkit-appearance: none;}
+input[type="submit"].svart{background-color: #000; color: #fff; border: 1px solid #333;-webkit-appearance: none;}
+a.gdl-button.shortcode-small-button{ font-size: 9px; }
+
+/* TITLAR FONTER */
+h1{ font-size: 18px; } 
+h2{ font-size: 13px; } 
+h3{ font-size: 13px; } 
+h4{ font-size: 12px; } 
+h5{ font-size: 11px; } 
+h6{ font-size: 10px; } 
+.font-size-8{ font-size: 8px; }
+.font-size-9{ font-size: 9px; }
+.font-size-10{ font-size: 10px; }
+.font-size-11{ font-size: 11px; }
+body{ font-size: 11px; } 
+.body-font { font-family: "HelveticaNeue", "Helvetica Neue", Arial, sans-serif; text-transform: uppercase;}
+h1, h2, h3, h4, h5, h6, .title-color, .Rubrik{ color: #000 !important; } 
+.title-color-kopa{ color: #fff !important; } 
+.gdl-page-caption{ color: #b2b2b2 !important; } 
+h1.gdl-page-title{ font-size: 16px;}
+h1.page-title-hemnet{ font-size: 20px; }
+.gdl-slider-title{ font-size: 12px;}
+h2.toggle-box-head, h2.accordion-head { font-size: 12px; line-height: 25px; } /* centrerar texten */
+h1.stunning-text-title{ font-size: 14px;}
+h1.single-thumbnail-title a {font-size: 14px;}
+h1, h2, h3, h4, h5, h6, .Rubrik, #slidecaption, a strong, .fonts-com { text-transform: uppercase; }
+.sf-menu li a strong, .sf-menu li a, div.wpcf7 p, input { text-transform: lowercase; }
+#maka-footer .fonts-com { text-transform: lowercase; }
+h2.toggle-box-head {font-size: 14px; }
+h3.portfolio-thumbnail-title a { font-size: 12px; }
+span.toggle-box-head-image{ margin-top: -7px;}
+h6 { margin-bottom: 5px; }
+p{ margin-bottom: 10px; }
+
+/* Hemnet objektlista */
+.hemnet-bild-frame-1, .hemnet-bild-frame-2, .hemnet-bild-frame-3, .hemnet-bild-frame-4 { max-width: 100%; float: left; position: relative; overflow: hidden; height: 180px; background-color: #fff;}
+.hemnet-bild-frame-1, .hemnet-bild-frame-2, .hemnet-bild-frame-3{ margin-right: 5px; }
+.hemnet-bild-frame-1 { width: 125px; margin-left: -20px; }
+.hemnet-bild-frame-2 { width: 125px; }
+.hemnet-bild-frame-3 { width: 125px; }
+.hemnet-bild-frame-4 { width: 125px; }
+.hemnet-bild-1 {width: 128px; height: 180px; }
+.hemnet-bild-2 {width: 127px; height: 180px; }
+.hemnet-bild-3 {width: 128px; height: 180px; }
+.hemnet-bild-4 {width: 127px; height: 180px; }
+.hemnet-column { float: left; display: inline; margin: 0px 0px 0px 10px; position: relative; }
+.hemnet-column-right {
+	margin-left: -10px;
+}
+/* Objektlista 
+div.blog-item-holder .blog-item1 .blog-thumbnail-title { font-size: 12px; font-weight: normal; padding-bottom: 6px; margin-bottom: 0; }
+.blog-thumbnail-image { position: relative; height: 240px; overflow: hidden; }
+.blog-thumbnail-title-objekt { margin: -23px 0 0 -15px;} */
+
+/* UL LI Listor Toggle box med mera */
+div.shortcode-list ul{ list-style: none; margin-left: 0px; margin-bottom: 20px;}	
+div.shortcode-list li{ padding:2px 0px 2px 10px; border: 0px; } 
+ul.gdl-toggle-box li{ border-bottom: none; }
+div.toggle-box-content{ padding: 0px 0px 10px 0px; }
+div.shortcode-list li { padding: 1px 0px }
+
+ul#portfolio-item-filter { margin: -10px 0px 0px 20px; float: left; position: relative; }
+ul#portfolio-item-filter li { margin: 5px 7px 5px 0px; }
+#portfolio-item-holder { margin-top: 10px; }
+
+/* Table */
+table { border-spacing: 0; border: 0px; width: 100%; }
+tr th{ border-bottom: 0px; text-align: left; }
+tr th, tr td{ padding: 5px; border-right: 0px; }
+tr th:last-child, tr td:last-child{ border-right: 0px; }
+table th{ font-weight: bold; }
+
+/* CONTACT FORM */
+div.contact-form-wrapper ol li { margin-bottom: 5px; }
+input[type="text"], input[type="password"], input[type="email"], textarea, select { font-size: 10px; }
+select { padding: 0; height: 25px; }
+span.wpcf7-form-control-wrap input[type="text"], span.wpcf7-form-control-wrap input[type="[password"], span.wpcf7-form-control-wrap textarea { height: 20px; }
+
+/* GRAFISKT */
+span.portfolio-thumbnail-image-hover span.hover-link{ background: none; }
+span.portfolio-thumbnail-image-hover span.hover-video{ background: url('images/image-overlay-video.png') no-repeat; }
+span.portfolio-thumbnail-image-hover span.hover-zoom{ background: none; }
+
+/******************
+* TIPS
+* TRICKS
+*******************/
+/* Hela vänstra menyn blir genoskinlig  
+div.gdl-left-sidebar .header-wrapper.five.columns, div.gdl-left-sidebar .header-wrapper.four.columns {
+	background: none !important;
+} */

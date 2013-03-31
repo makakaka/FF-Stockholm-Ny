@@ -1,0 +1,1 @@
+<?php $captcha = "VG2JS"; ?>
